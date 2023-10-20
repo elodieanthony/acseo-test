@@ -1,0 +1,81 @@
+// HEADER STYLE
+
+.header {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+
+  &__nav {
+    padding: 1rem;
+
+    @media (min-width: 1024px) {
+      justify-content: center;
+    }
+  }
+
+  &__burger {
+    padding: 0;
+    border: none;
+  }
+
+  &__contact-icon {
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    padding: 1rem 0;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      padding: 0;
+      margin: 0 2rem;
+    }
+
+    @media (min-width: 1440px) {
+        margin: 0 1rem 0 2rem;
+      }
+  }
+
+  &__link {
+    position: relative;
+    padding: 0.5rem 0;
+
+    a {
+      font-size: 0.938rem;
+      font-weight: 400;
+      color: $color-black;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-light-blue;
+      }
+    }
+    @media (min-width: 1024px) {
+      padding: 0.2rem 1rem;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0.2rem 2rem;
+    }
+
+    &:not(:last-child) {
+      @media (min-width: 1024px) {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          background-color: $color-light-blue;
+        }
+      }
+    }
+  }
+
+  .collapse {
+    @media (min-width: 1024px) {
+      flex-grow: inherit;
+    }
+  }
+}

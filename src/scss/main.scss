@@ -1,10 +1,16 @@
 // MAIN STYLE FILE
 
 //IMPORTS
-//Bootstrap sttyle
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-//main theme style
+//Bootstrap style
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+//Main theme style
 @import './theme.scss';
+
+//Parts style
+@import './header.scss';
+@import './footer.scss';
+@import './buttons.scss';
 
 // GLOBAL STYLE
 * {
@@ -44,4 +50,9 @@ p {
   &--small {
     font-size: 0.875rem;
   }
+}
+
+img {
+    vertical-align: inherit;
+    border-style: inherit;
 }

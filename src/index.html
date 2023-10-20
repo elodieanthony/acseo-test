@@ -10,15 +10,74 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <div class="container">
-      <h1>Tittle h1</h1>
-      <h2>Title h2</h2>
-      <p>Text</p>
-      <a class="link link--small">Test link</a>
-    </div>
-    <script type="module" src="./js/index.js"></script>
+    <header class="header">
+      <nav class="header__nav navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler header__burger"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="./assets/icons/burger.png" alt="Icone burger" />
+        </button>
+
+        <a class="header__logo" href="#">
+          <img
+            src="./assets/img/logo-mobile.png"
+            alt="Logo Acseo"
+            srcset="./assets/img/logo-mobile.png, ./assets/img/logo.png"
+          />
+        </a>
+        <div class="header__contact-icon">
+          <a href="">
+            <img src="./assets/icons/mail-black.png" alt="Contact Acseo" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav header__menu">
+            <li class="nav-item header__link">
+              <a href="#">Expertises </a>
+            </li>
+            <li class="nav-item header__link">
+              <a href="#">Technologies & CMS</a>
+            </li>
+            <li class="nav-item header__link">
+              <a href="#">Réalisations</a>
+            </li>
+            <li class="nav-item header__link">
+              <a href="#">Agences</a>
+            </li>
+            <li class="nav-item header__link">
+              <a href="#">Équipe</a>
+            </li>
+            <li class="nav-item header__link">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+          <div class="button button--primary">
+            <a class="btn" href="#">Contactez-nous</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container"></div>
+    <footer class="footer"></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
