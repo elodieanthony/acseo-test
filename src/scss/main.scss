@@ -1,0 +1,47 @@
+// MAIN STYLE FILE
+
+//IMPORTS
+//Bootstrap sttyle
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+//main theme style
+@import './theme.scss';
+
+// GLOBAL STYLE
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+a {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.375;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.link {
+  font-size: 1.125rem;
+  color: $color-link;
+  text-decoration: underline;
+  &--small {
+    font-size: 0.875rem;
+  }
+}
