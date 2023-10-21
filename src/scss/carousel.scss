@@ -1,15 +1,24 @@
 // SLIDER STYLE
 
-.slider {
+.slider,
+.slider-testimony {
   &__item {
     position: relative;
     padding: 6px;
+    min-height: 100%;
+    cursor: pointer;
     > img {
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+.slider {
+  &__item {
+    > img {
       filter: brightness(0.5);
       transition: filter 0.3s ease;
-      cursor: pointer;
     }
     &:hover > img {
       filter: brightness(1);
@@ -69,3 +78,8 @@
     border: 1px solid $color-white;
   }
 }
+
+.slick-track {
+    display: flex !important;
+  }
+  
