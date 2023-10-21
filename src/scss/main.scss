@@ -5,11 +5,15 @@
 //Main theme style
 @import './theme.scss';
 
+//Mixins
+@import './mixins';
+
 //Parts style
 @import './header.scss';
 @import './footer.scss';
 @import './buttons.scss';
 @import './hero.scss';
+@import './expertise.scss';
 
 // GLOBAL STYLE
 * {
@@ -24,6 +28,10 @@ body {
 }
 section {
   padding: 3.125rem 1.25rem;
+  text-align: center;
+  .container {
+    padding: 0;
+  }
 }
 
 h1,
@@ -43,11 +51,19 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
+  @media (min-width: 1024px) {
+    font-size: 1.375rem;
+  }
 }
 
 p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  color: $color-black;
+
+  @media (min-width: 1024px) {
+    font-size: 1rem;
+  }
 }
 
 ul {
@@ -56,7 +72,7 @@ ul {
 
 .link {
   font-size: 1.125rem;
-  color: $color-text;
+  color: $color-red;
   text-decoration: underline;
   &--small {
     font-size: 0.875rem;

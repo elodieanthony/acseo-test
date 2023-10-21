@@ -1,8 +1,6 @@
 // FOOTER STYLE
 
 .footer {
-  // margin-top: 2rem;
-
   a {
     font-size: 0.875rem;
     font-weight: 400;
@@ -63,11 +61,11 @@
       }
     }
   }
-  
+
   &__contact {
     margin-top: 1rem;
     p {
-      font-size: 0.875rem;
+      color: $color-white;
     }
     span {
       display: block;

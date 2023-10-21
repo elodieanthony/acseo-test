@@ -1,14 +1,17 @@
 // HERO STYLE
 
 .hero {
-  text-align: center;
-
   &__content {
     @media (min-width: 1024px) {
       margin: auto;
     }
   }
 
+  &__picture {
+    img {
+      width: 100%;
+    }
+  }
   h1 {
     font-size: 2.5rem;
     font-weight: 900;
@@ -47,14 +50,7 @@
   }
 
   p {
-    margin: 1.25rem 1rem;
-    color: $color-grey;
-    font-size: 0.75rem;
-
-    @media (min-width: 1024px) {
-      margin: 2.5rem 0;
-      font-size: 1rem;
-    }
+    @include text-intro();
   }
 
   @media (min-width: 1024px) {
