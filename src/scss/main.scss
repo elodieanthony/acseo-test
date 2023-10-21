@@ -1,8 +1,6 @@
 // MAIN STYLE FILE
 
 //IMPORTS
-//Bootstrap style
-// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 //Main theme style
 @import './theme.scss';
@@ -26,6 +24,7 @@ body {
 
 h1,
 h2,
+h3,
 a {
   font-weight: 700;
 }
@@ -38,9 +37,17 @@ h2 {
   font-size: 1.375;
 }
 
+h3 {
+  font-size: 1.125rem;
+}
+
 p {
   font-weight: 400;
   font-size: 1rem;
+}
+
+ul {
+  list-style: none;
 }
 
 .link {
@@ -53,6 +60,6 @@ p {
 }
 
 img {
-    vertical-align: inherit;
-    border-style: inherit;
+  vertical-align: inherit;
+  border-style: inherit;
 }
