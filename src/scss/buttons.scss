@@ -1,6 +1,8 @@
 // BUTTONS STYLE
 
 .button {
+  display: flex;
+  justify-content: center;
   text-align: center;
   a {
     padding: 0.65rem 1.25rem;

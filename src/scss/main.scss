@@ -9,6 +9,7 @@
 @import './header.scss';
 @import './footer.scss';
 @import './buttons.scss';
+@import './hero.scss';
 
 // GLOBAL STYLE
 * {
@@ -20,6 +21,9 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+}
+section {
+  padding: 3.125rem 1.25rem;
 }
 
 h1,
@@ -52,7 +56,7 @@ ul {
 
 .link {
   font-size: 1.125rem;
-  color: $color-link;
+  color: $color-text;
   text-decoration: underline;
   &--small {
     font-size: 0.875rem;
