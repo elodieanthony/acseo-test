@@ -14,6 +14,9 @@
 @import './buttons.scss';
 @import './hero.scss';
 @import './expertise.scss';
+@import './realization.scss';
+
+@import './carousel.scss';
 
 // GLOBAL STYLE
 * {
@@ -33,6 +36,18 @@ section {
     padding: 0;
   }
 }
+.intro {
+  h1 {
+    @include title-underline(140, 160, 10, 20);
+  }
+
+  p {
+    @include text-intro();
+    @media (min-width: 1024px) {
+      max-width: 920px;
+    }
+  }
+}
 
 h1,
 h2,
@@ -46,7 +61,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.375;
+  font-size: 1.375rem;
+
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+  }
 }
 
 h3 {
@@ -66,6 +85,17 @@ p {
   }
 }
 
+.subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: $color-black;
+
+  @media (min-width: 1024px) {
+    font-size: 1rem;
+  }
+}
+
 ul {
   list-style: none;
 }
@@ -77,9 +107,16 @@ ul {
   &--small {
     font-size: 0.875rem;
   }
+  &:hover {
+    color: $color-red;
+  }
 }
 
 img {
   vertical-align: inherit;
   border-style: inherit;
+}
+
+.bg-grey {
+  background-color: $color-bg-grey;
 }

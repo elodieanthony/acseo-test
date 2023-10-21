@@ -1,0 +1,71 @@
+// SLIDER STYLE
+
+.slider {
+  &__item {
+    position: relative;
+    padding: 6px;
+    > img {
+      width: 100%;
+      height: auto;
+      filter: brightness(0.5);
+      transition: filter 0.3s ease;
+      cursor: pointer;
+    }
+    &:hover > img {
+      filter: brightness(1);
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+    cursor: pointer;
+
+    &:hover {
+      .slider__cta {
+        border: 1px solid $color-red;
+        svg path {
+          fill: $color-red;
+        }
+      }
+    }
+  }
+
+  &__info {
+    text-align: left;
+    h2 {
+      margin-bottom: 0.5rem;
+
+      @media (min-width: 1024px) {
+        margin: 0.5rem 0;
+      }
+    }
+    h2,
+    p {
+      color: $color-white;
+    }
+  }
+
+  &__buttons {
+    @media (min-width: 1024px) {
+      position: absolute;
+      right: 2rem;
+    }
+  }
+
+  &__button {
+    @extend .button;
+    @extend .button__cta;
+  }
+
+  &__next {
+    margin-left: 1.25rem;
+  }
+
+  &__cta {
+    border: 1px solid $color-white;
+  }
+}

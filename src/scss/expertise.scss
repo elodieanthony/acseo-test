@@ -1,19 +1,6 @@
 // EXPERTISE SECTION STYLE
 
 .expertise {
-  background-color: $color-bg-grey;
-  &__content {
-    h1 {
-      @include title-underline(140, 160, 10, 20);
-    }
-
-    p {
-      @include text-intro();
-      @media (min-width: 1024px) {
-        max-width: 920px;
-      }
-    }
-  }
   &__list {
     img {
       width: 80px;

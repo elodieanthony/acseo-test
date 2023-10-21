@@ -1,0 +1,20 @@
+// REALIZATION CONTENT STYLE
+
+.realization {
+  .intro p {
+    margin: 0;
+  }
+
+  &__group {
+    margin: 1.25rem 1rem;
+
+    @media (min-width: 1024px) {
+      margin: 2.5rem auto;
+    }
+  }
+
+  .link {
+    display: block;
+    margin-top: 1.25rem;
+  }
+}

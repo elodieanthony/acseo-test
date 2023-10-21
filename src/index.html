@@ -16,7 +16,13 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
@@ -101,9 +107,9 @@
           </div>
         </div>
       </section>
-      <section class="expertise">
+      <section class="expertise bg-grey">
         <div class="container">
-          <div class="expertise__content">
+          <div class="intro expertise__content">
             <h1>Nos expertises</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -181,6 +187,151 @@
             </ul>
           </div>
         </div>
+      </section>
+      <section class="realization">
+        <div class="container">
+          <div class="intro realization__content">
+            <h1>Nos réalisations</h1>
+            <div class="realization__group d-lg-flex justify-content-lg-center">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod
+              </p>
+              <div
+                class="slider__buttons d-flex justify-content-center mt-3 mt-lg-0"
+              >
+                <div class="slider__button slider__prev">
+                  <svg
+                    width="12"
+                    height="6"
+                    viewBox="0 0 12 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.86837 2.09324H11.2397C11.6578 2.09324 12 2.50289 12 3.00358C12 3.50427 11.6578 3.91392 11.2397 3.91392H2.86837V5.54343C2.86837 5.95309 2.45779 6.15336 2.22208 5.86205L0.108348 3.3222C-0.0361156 3.14013 -0.0361156 2.85792 0.108348 2.67585L2.22208 0.136C2.45779 -0.155309 2.86837 0.054069 2.86837 0.45462V2.09324Z"
+                      fill="#737b7d"
+                    />
+                  </svg>
+                </div>
+                <div class="slider__button slider__next">
+                  <svg
+                    width="12"
+                    height="6"
+                    viewBox="0 0 12 6"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z"
+                      fill="#737b7d"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider__item">
+            <img src="https://unsplash.it/350/250?image=768" />
+            <div
+              class="slider__bottom d-flex justify-content-between align-items-center"
+            >
+              <div class="slider__info">
+                <div class="slider__logo d-none d-lg-block">
+                  <img src="./assets/img/tf1-logo.png" alt="Logo tf1" />
+                </div>
+                <h2 class="slider__title">JPP TV</h2>
+                <p class="subtitle">Développement - Symfony</p>
+              </div>
+              <div class="slider__cta button button__cta">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="https://unsplash.it/350/250?image=772" />
+            <div
+              class="slider__bottom d-flex justify-content-between align-items-center"
+            >
+              <div class="slider__info">
+                <div class="slider__logo d-none d-lg-block">
+                  <img src="./assets/img/ontera-logo.png" alt="Logo Ontera" />
+                </div>
+                <h2 class="slider__title">Site e-commerce</h2>
+                <p class="subtitle">
+                  Développement - Symfony - Angular - E-commerce
+                </p>
+              </div>
+              <div class="slider__cta button button__cta">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="https://unsplash.it/350/250?image=773" />
+            <div
+              class="slider__bottom d-flex justify-content-between align-items-center"
+            >
+              <div class="slider__info">
+                <div class="slider__logo d-none d-lg-block">
+                  <img src="./assets/img/wever-logo.png" alt="Logo Wever" />
+                </div>
+                <h2 class="slider__title">Développement plateforme</h2>
+                <p class="subtitle">
+                  Développement - Symfony - Front - React JS
+                </p>
+              </div>
+              <div class="slider__cta button button__cta">
+                <svg
+                  width="12"
+                  height="6"
+                  viewBox="0 0 12 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="https://unsplash.it/350/250?image=774" />
+          </div>
+          <div class="slider__item">
+            <img src="https://unsplash.it/350/250?image=775" />
+          </div>
+          <div class="slider__item">
+            <img src="https://unsplash.it/350/250?image=769" />
+          </div>
+        </div>
+        <a class="link" href="#">voir toutes les réalisations</a>
       </section>
     </main>
     <footer class="footer">
@@ -316,5 +467,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
