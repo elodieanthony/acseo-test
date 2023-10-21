@@ -37,7 +37,7 @@ $('.slider').slick({
 
 $('.slider-testimony').slick({
   dots: true,
-//   infinite: true,
+  //   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -63,6 +63,4 @@ $('.slider-testimony').slick({
       },
     },
   ],
-  prevArrow: prevButton,
-  nextArrow: nextButton,
 });

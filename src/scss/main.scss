@@ -15,6 +15,7 @@
 @import './hero.scss';
 @import './expertise.scss';
 @import './realization.scss';
+@import './technology.scss';
 
 @import './carousel.scss';
 @import './card.scss';
@@ -102,6 +103,7 @@ ul {
 }
 
 .link {
+  display: block;
   font-size: 1.125rem;
   color: $color-red;
   text-decoration: underline;

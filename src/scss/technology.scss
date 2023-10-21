@@ -1,0 +1,25 @@
+// TECHNOLOGY CONTENT STYLE
+
+.technology {
+  &__assets {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto -1.25rem;
+  }
+
+  &__img {
+    flex-basis: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: 1024px) {
+      flex-basis: 25%;
+    }
+  }
+
+  .link {
+    margin-top: 1.25rem;
+  }
+}
