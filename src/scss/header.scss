@@ -1,9 +1,11 @@
 // HEADER STYLE
 
 .header {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
-  @media (min-width: 1024px) {
-    box-shadow: none;
+  background-color: $color-white;
+  // box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid $color-border;
+  @media (min-width: 768px) {
+    border: none;
   }
 
   &__nav {
