@@ -17,6 +17,7 @@
 @import './realization.scss';
 @import './technology.scss';
 @import './blog.scss';
+@import './contact.scss';
 
 @import './carousel.scss';
 @import './card.scss';
@@ -60,7 +61,10 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
 }
 
 h2 {

@@ -1,0 +1,16 @@
+// CONTACT CONTENT STYLE
+.contact {
+  h1 {
+    // width: 80%;
+    margin: auto;
+    span:first-child {
+      @include title-underline(85%, 10, 20);
+    }
+  }
+  .button {
+    margin-top: 1.25rem;
+  }
+  @media (min-width: 1024px) {
+    padding: 5rem 1.25rem;
+  }
+}
