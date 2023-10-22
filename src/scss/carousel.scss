@@ -17,6 +17,7 @@
 .slider {
   &__item {
     > img {
+      height: 100%;
       filter: brightness(0.5);
       transition: filter 0.3s ease;
     }
@@ -87,8 +88,13 @@
 .slick-track {
   display: flex !important;
 }
-
+.slick-slide {
+  height: inherit !important;
+}
 // Custom dots
+.slick-dots {
+  bottom: -45px;
+}
 .slick-dots li {
   margin: 0;
 }
@@ -97,6 +103,7 @@
 }
 
 .slick-dots li button:before {
+  font-size: 9px;
   color: #c4c4c4;
   opacity: 1;
 }

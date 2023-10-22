@@ -1,6 +1,8 @@
 // HERO STYLE
 
 .hero {
+  padding: 3.125rem 1.25rem;
+
   &__content {
     @media (min-width: 768px) {
       margin: auto;
