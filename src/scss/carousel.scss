@@ -76,6 +76,10 @@
 
   &__cta {
     border: 1px solid $color-white;
+
+    @media (min-width: 1024px) {
+      align-self: self-end;
+    }
   }
 }
 
