@@ -79,7 +79,25 @@
   }
 }
 
+// Custom style for Slick slider
 .slick-track {
-    display: flex !important;
-  }
-  
+  display: flex !important;
+}
+
+// Custom dots
+.slick-dots li {
+  margin: 0;
+}
+.slick-dots li.slick-active button:before {
+  color: $color-sky-blue;
+}
+
+.slick-dots li button:before {
+  color: #c4c4c4;
+  opacity: 1;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: $color-sky-blue;
+}
