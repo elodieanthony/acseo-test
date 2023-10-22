@@ -15,12 +15,15 @@
 }
 
 .slider {
+  margin: 0 -1.25rem 0 0;
+
   &__item {
     > img {
       height: 100%;
       filter: brightness(0.5);
       transition: filter 0.3s ease;
     }
+
     &:hover > img {
       filter: brightness(1);
     }
@@ -37,6 +40,7 @@
     &:hover {
       .slider__cta {
         border: 1px solid $color-red;
+
         svg path {
           fill: $color-red;
         }
@@ -46,6 +50,7 @@
 
   &__info {
     text-align: left;
+
     h2 {
       margin-bottom: 0.5rem;
 
@@ -53,6 +58,7 @@
         margin: 0.5rem 0;
       }
     }
+
     h2,
     p {
       color: $color-white;
@@ -88,16 +94,20 @@
 .slick-track {
   display: flex !important;
 }
+
 .slick-slide {
   height: inherit !important;
 }
+
 // Custom dots
 .slick-dots {
   bottom: -45px;
 }
+
 .slick-dots li {
   margin: 0;
 }
+
 .slick-dots li.slick-active button:before {
   color: $color-sky-blue;
 }

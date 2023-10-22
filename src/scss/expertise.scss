@@ -6,6 +6,7 @@
       width: 80px;
       height: 80px;
       margin-bottom: 1rem;
+
       @media (min-width: 1024px) {
         width: 100px;
         height: 100px;
@@ -14,9 +15,18 @@
 
     p {
       font-size: 0.75rem;
+
       @media (min-width: 1024px) {
         font-size: 1rem;
       }
+    }
+  }
+
+  .intro p {
+    margin-bottom: 1.875rem;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 5.375rem;
     }
   }
 }

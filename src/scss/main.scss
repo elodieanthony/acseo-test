@@ -23,12 +23,6 @@
 @import './card.scss';
 
 // GLOBAL STYLE
-* {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -53,6 +47,7 @@ section {
 
   p {
     @include text-intro();
+
     @media (min-width: 1024px) {
       max-width: 920px;
     }
@@ -69,6 +64,7 @@ a {
 h1 {
   font-size: 1.5rem;
   margin: 0;
+
   @media (min-width: 1024px) {
     font-size: 2rem;
   }
@@ -84,6 +80,7 @@ h2 {
 
 h3 {
   font-size: 1.125rem;
+
   @media (min-width: 1024px) {
     font-size: 1.375rem;
   }
@@ -121,16 +118,17 @@ ul {
   color: $color-red;
   text-decoration: underline;
 
-  &--small {
-    margin: 0;
-    font-size: 0.875rem;
-  }
   &:hover {
     color: $color-red;
   }
 
   @media (min-width: 1024px) {
     margin-top: 3.125rem;
+  }
+
+  &--small {
+    margin: 0;
+    font-size: 0.875rem;
   }
 }
 
