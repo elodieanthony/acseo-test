@@ -21,6 +21,14 @@
     background-color: $color-white;
   }
 
+  &__img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
   &__bottom {
     p {
       margin: 0;
@@ -28,7 +36,33 @@
     }
   }
 
+  &__content {
+    padding: 0 1.25rem;
+  }
+  &__footer {
+    padding: 0 1.25rem 1.25rem;
+
+    p {
+      margin: 0;
+      color: $color-grey;
+    }
+  }
+
+  h3 {
+    margin: 1.25rem 0;
+    color: $color-sky-blue;
+  }
+
   @media (min-width: 1024px) {
-    min-width: 300px;
+    min-height: 300px;
+  }
+
+  //Modifyers
+
+  &--top-flat {
+    padding: 0;
+    margin-top: 1.125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }

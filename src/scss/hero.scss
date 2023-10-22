@@ -2,7 +2,7 @@
 
 .hero {
   &__content {
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       margin: auto;
     }
   }

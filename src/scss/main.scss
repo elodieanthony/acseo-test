@@ -16,6 +16,7 @@
 @import './expertise.scss';
 @import './realization.scss';
 @import './technology.scss';
+@import './blog.scss';
 
 @import './carousel.scss';
 @import './card.scss';
@@ -40,7 +41,7 @@ section {
 }
 .intro {
   h1 {
-    @include title-underline(140, 160, 10, 20);
+    @include title-underline(90%, 10, 20);
   }
 
   p {
@@ -104,10 +105,13 @@ ul {
 
 .link {
   display: block;
+  margin-top: 1.25rem;
   font-size: 1.125rem;
   color: $color-red;
   text-decoration: underline;
+
   &--small {
+    margin: 0;
     font-size: 0.875rem;
   }
   &:hover {

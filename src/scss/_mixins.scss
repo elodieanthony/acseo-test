@@ -1,4 +1,4 @@
-@mixin title-underline($width,$widthlg, $height, $heightlg) {
+@mixin title-underline($width, $height, $heightlg) {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -14,7 +14,7 @@
     background-color: $color-light-blue;
     z-index: -1;
     @media (min-width: 1024px) {
-      width: $widthlg;
+      width: $width;
       height: $heightlg;
     }
   }
@@ -24,7 +24,7 @@
 }
 
 @mixin text-intro() {
-  margin: 1.25rem 1rem;
+  margin: 1.25rem 0;
   color: $color-grey;
   font-size: 0.75rem;
 
