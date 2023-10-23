@@ -15,8 +15,6 @@
 }
 
 .slider {
-  margin: 0 -1.25rem 0 0;
-
   &__item {
     > img {
       height: 100%;
@@ -88,6 +86,10 @@
       align-self: self-end;
     }
   }
+
+  @media (min-width: 1024px) {
+    margin: 0 -1.25rem 0 0;
+  }
 }
 
 // Custom style for Slick slider
@@ -101,7 +103,11 @@
 
 // Custom dots
 .slick-dots {
-  bottom: -45px;
+  bottom: -33px;
+
+  @media (min-width: 1024px) {
+    bottom: -45px;
+  }
 }
 
 .slick-dots li {
